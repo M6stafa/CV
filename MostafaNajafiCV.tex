@@ -1,0 +1,177 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75, margin=1.0in]{geometry}
+
+\setlength{\hintscolumnwidth}{3.1cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Mostafa}{Najafi}
+% \title{}
+
+% \address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+98~(921)~390~8780}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{mostafa.najafi1996@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{Born on 8 December 1996}                 % optional, remove / comment the line if not wanted
+\photo[80pt][0.4pt]{Picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Enthusiastic to learn new things, specially in computer}                                 % optional, remove / comment the line if not wanted
+\social[github][github.com/M6stafa]{https://github.com/M6stafa}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{Education}
+\cventry{2019 -- 2022}{M.Sc. in Computer Engineering - Bioinformatics}{Sharif University of Technology}{Tehran, Iran}{}{}
+
+\cventry{2014 -- 2019}{B.Sc. in Computer Software Engineering}{Islamic Azad University Central Tehran Branch}{Tehran, Iran}{GPA: 3.44}{}
+
+\cventry{2010 -- 2014}{Diploma in Mathematics and Physics Discipline}{Allame Helli 3 High School}{Tehran, Iran}{}{Affiliated with the National Organization for Development of Exceptional Talents}
+
+
+\section{Industrial Experience}
+\cventry{2015 -- now}{Owner}{\href{https://github.com/koala-team}{\color{blue}{Koala Team}}}{Tehran, Iran}{}{}
+\cventry{2017/01 -- 2018/10}{Artificial Intelligence Researcher}{Green and Silver Leaves}{Tehran, Iran}{}
+{
+The second project of this company was an automation service for pathobiology
+labs. From creating a microscope that automatically scans slides to create a web
+application for managing slides and patients. My task was diagnosing cancer
+potential cells from scaned images. We've reached the accurracy of about 60\% in finding
+the cells in images with Mask-RCNN and about 94\% in classification of the cells.
+\newline
+The main resources we used: \href{https://www.researchgate.net/publication/309194269_Automated_Classification_of_Pap_Smear_Image_to_Detect_Cervical_Dysplasia}{\color{blue}{The article used for classification}} - \href{https://www.kaggle.com/c/data-science-bowl-2018/overview}{\color{blue}{Kaggle 2018 Data Science Bowl}}
+\newline
+}
+
+\cventry{2016/07 -- 2016/09}{Backend Developer}{\href{http://gandom.co/}{\color{blue}{Gandom}}}{Tehran, Iran}{}
+{
+This company creates web and mobile applications. I was one of the backend develpoers of the ChiChiKoo (a service like foursquare). We developed a RESTful API with flask.
+\newline
+}
+
+\cventry{2014/12 -- 2015/08}{Web Developer}{\href{http://kian-ph.com/}{\color{blue}{Kian Pardaz Hooshmand}}}{Tehran, Iran}{}
+{
+This company provides services in various fields. I joined their web team and developed an \href{http://portal.parseekenglish.com/newportal/index.php}{\color{blue}{english institute web portal}} from 0-100 with \href{https://codeigniter.com/}{\color{blue}{codeigniter}} used for backend and also \href{https://getbootstrap.com/}{\color{blue}{bootstrap}} and jQuery used for its frontend.
+\newline
+}
+
+
+\section{Teaching Experience}
+\cventry{Fall 2018}{Teacher's Assistant: Software Engineering (Dr. Mehrdad Ashtiani)}{Iran University of Science and Technology}{Tehran, Iran}{}{}
+
+\cventry{Summer 2016}{Game Development}{Iran University of Science and Technology}{Tehran, Iran}{}{}
+
+
+\pagebreak
+\section{Volunteer Experience}
+\cventry{2018/08 -- 2019/03}{Technical Supervisor, Game Designer and Game Developer of \newline \href{https://2019.chillinwars.ir}{\color{blue}{ChillinWars 2019}}}{Iran University of Science and Technology}{Tehran, Iran}{}{}
+
+\cventry{2017/09 -- 2018/01}{Game Designer and Game Developer of \href{https://2017.chillinwars.ir}{\color{blue}{ChillinWars 2017}}}{Iran University of Science and Technology}{Tehran, Iran}{}{}
+
+
+\section{Skills}
+\cvitem{Self Learning}{I think this is the most important skill of mine and I've learned my other skills by it.}
+\cvitem{Programming}{
+	\textit{Proficient at:} Python, JavaScript, TypeScript, C\#, C++, HTML, CSS, SQL, PHP \newline
+	\textit{Familiar with:} MATLAB, VHDL, Assembly, Pascal, Bash Script, Erlang, Lua
+}
+\cvitem{Framework/Library}{Keras, VueJS, Flask, Bootstrap, Quasar, Tensorflow, ElectronJS, OpenCV, OpenGL, Gulp, SDL, SFML, PhalconPHP}
+\cvitem{Others}{Linux, Git, Unity, Telegram Bot}
+
+
+\section{Selected Projects}
+\cvitem{2017 -- now}{\textbf{Chillin:} A tool for creating game AI competitions. It consists of multiple components, including a \href{https://github.com/koala-team/Chillin-PyServer}{\color{blue}{server framework}} written in Python, three client components written in \href{https://github.com/koala-team/Chillin-PyClient}{\color{blue}{Python}}, \href{https://github.com/koala-team/Chillin-CppClient}{\color{blue}{C++}}, and \href{https://github.com/koala-team/Chillin-JavaClient}{\color{blue}{Java}}. Also, Chillin came up with a \href{https://github.com/koala-team/Chillin-Monitor-2}{\color{blue}{3D monitor}} created with Unity to spectate the games and watch what happens in the field. \newline \href{https://2017.chillinwars.ir}{\color{blue}{ChillinWars 2017}} and \href{https://chillinwars.ir}{\color{blue}{ChillinWars 2019}} utilized this tool to create games for their competitions. Some examples can be found \href{https://github.com/Chillin-Examples}{\color{blue}{here}}.}
+
+\cvitem{2018 -- 2019}{\textbf{Musical Chord Detection:} An application that detects \href{https://en.wikipedia.org/wiki/Musical_note}{\color{blue}{musical notes}} in a musical signal (created by Piano, Guitar, and etc). It's a very difficult problem and still isn't solved completely. Typically there exists 108 different notes and detecting a single note is kind of simple but the problem shows up when some notes are played simultaneously (chords). Imagine if someone plays 10 Piano notes with his 10 fingers, then there could be almost 100\^{}10 possible different chords. Solving this problem using basic ANN algorithms is not actually possible.}
+
+\cvitem{Fall 2018}{\textbf{MathExam:} An Electron+Vuejs pc application that provides some tools for managing school exams and questions. Also complex questions (containing equations, etc) were supported by help of Mathjax.}
+
+\cvitem{Fall 2017}{\textbf{Algorithm Visualization:} Visualize some sorting algorithms using Vuejs and D3js. \href{https://m6stafa.github.io/\#/algovis}{\color{blue}{Demo link}} - \href{https://github.com/M6stafa/m6stafa.github.io-src/tree/master/src/components/algorithm_visualization}{\color{blue}{Source link}}}
+
+\cvitem{2015/10}{\textbf{Ragdoll:} An arcade game created by Unity. \href{https://cafebazaar.ir/app/com.khaste.ragdoll/}{\color{blue}{Download link}}}
+
+\cvitem{2011 -- 2013}{\textbf{Robocup 3D Soccer Simulation} Robocup 3D Soccer Simulation is a seniors' tournament that is a part of robotics tournaments like IranOpen. Its goal is to write a code that manages 11 simulated \href{https://en.wikipedia.org/wiki/Nao_(robot)}{\color{blue}{NAO robots}} to play soccer. What I've done in team was writing Forward and Inverse Kinematics and Walking. I've tested several methods for implementation of the walking like ANN and sinusoidal foot trajectories and some methods for optimizing them like PSO and GeneticAlgorithm. Our TDP which was sent for and got quilified in World Championship 2013 competitions can be found \href{https://www.dropbox.com/s/nkwcxfojufvafgt/3d_tdp_s4m.pdf?dl=0}{\color{blue}{here}}. \href{https://gitlab.com/4/4d-simulation}{\color{blue}{Gitlab link}}.}
+
+\cvitem{Winter 2012}{\textbf{Othello:} An object-oriented client/server platform providing an interface for othello AI programs written in C++. Uses Boost Asio and SDL.}
+
+\cvitem{2011 -- 2012}{\textbf{Car Tracking:} A dynamic system that detects cars and their movements. \href{https://github.com/AminHP/CarTracking}{\color{blue}{Github link}}}
+
+\cvitem{2011 -- 2012}{\textbf{Inverted Pendulum:} A system which simulates the famous \href{https://en.wikipedia.org/wiki/Inverted_pendulum}{\color{blue}{Inverted Pendulum}} problem written in C++. Also an AI is implemented that uses Q-Learning to keep the pendulum inverted in the system.}
+
+\cvitem{2010 -- 2011}{\textbf{NabRai Signal Processing Lab Project:} Classify voice to realize some words. Project written in matlab.}
+
+\cvitem{2009 -- 2010}{\textbf{Othello:} My very first complete project that written in C++. You can play othello with an AI that implemented with min-max tree.}
+
+
+\section{Awards \& Honors}
+\cventry{Apr 2013}{Robocup IranOpen 2013}{3D Soccer Simulation league}{Certificate of Participation}{}{}
+
+\cventry{Mar 2013}{Robocup World Championship 2013}{3D Soccer Simulation League}{Qualified}{}{}
+
+\cventry{Feb 2013}{Farzanegan Robocup 2013}{3D Soccer Simulation league}{Ranked First Place}{}{}
+
+\cventry{Apr 2012}{Robocup IranOpen 2012}{3D Soccer Simulation league}{Certificate of Participation}{}{}
+
+\cventry{Apr 2012}{Robocup DutchOpen 2012}{3D Soccer Simulation league}{Certificate of Participation}{}{}
+
+\cventry{2012}{Seminar on Science and Technology}{Allame Helli 3 High School}{Ranked First Place}{}{}
+
+
+\section{Interests}
+\cvlistdoubleitem{Machine Learning}{Machine Vision}
+
+\cvlistdoubleitem{Reinforcement Learning}{Artificial Neural Networks}
+
+\cvlistdoubleitem{Game Development}{Solving Algorithmic Problems}
+
+\cvlistdoubleitem{Robotics}{FPS Games}
+
+\cvlistdoubleitem{Football}{Foosball}
+
+
+\section{Personality}
+\cvlistitem{\href{https://mycreativetype.com/type/visionary/}{\color{blue}{https://mycreativetype.com/type/visionary/}}}
+
+\cvlistitem{\href{https://www.16personalities.com/intp-personality}{\color{blue}{https://www.16personalities.com/intp-personality}}}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
